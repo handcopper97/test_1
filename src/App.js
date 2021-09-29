@@ -17,7 +17,7 @@ function App({ props }) {
       ></Route>
       <Route
         exact
-        path="/test_1"
+        path="/test_1/"
         render={props => <LandingPage props={props} />}
       ></Route>
       <Route

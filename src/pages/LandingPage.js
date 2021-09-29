@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import styled from 'styled-components';
 import StartButtonComponent from '../components/StartButtonComponent';
 import QuizPage from './QuizPage';
-import Ewha from '../assets/common/ewhasymbol.png';
 
 const Wrapper = styled.div`
     display: ${props => props.isShow === true ? 'flex' : 'none'};
@@ -63,7 +62,7 @@ function LandingPage() {
                     <Intro>나는 언제까지 살수 있을까?<br />  테스트</Intro>
                     <Title>my life</Title>
                     <StartButtonComponent type={true} text={"시작하기"} onclick={onClickStartBtn} />
-                    <Footer>made by DSC EWHA &nbsp;<Logo src={Ewha} /></Footer>
+                    <Footer>made by Yeom-Ra &nbsp;</Footer>
                 </Container>
             </Wrapper>
             <QuizPage isShow={isQuizShow} />

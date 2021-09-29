@@ -5,7 +5,7 @@ import contents from './contents/questions';
 import ProgressBar from '../components/ProgressBar';
 import Parser from 'html-react-parser';
 import { Link, Redirect } from 'react-router-dom'
-import Ewha from '../assets/common/ewhasymbol.png';
+
 
 const Wrapper = styled.div`
     display: ${props => props.isShow === true ? 'flex' : 'none'};
@@ -55,9 +55,6 @@ const Text = styled.div`
     margin-bottom:8.4rem; 
 `
 
-const Logo = styled.img`
-    width: 1.2rem;
-`
 
 function QuizPage({ isShow }) {
 
@@ -141,7 +138,7 @@ function QuizPage({ isShow }) {
                 <Wrapper isShow={isLoading}>
                     <Title>당신의 남은 수명</Title>
                     <Msg>당신의 남은 수명을 찾고 있어요 </Msg>
-                    <Footer>made by DSC EWHA &nbsp;<Logo src={Ewha} /></Footer>
+                    <Footer>made by Yeom-Ra&nbsp;</Footer>
                 </Wrapper>
                 <Wrapper isShow={isProcess}>
                     <Container>

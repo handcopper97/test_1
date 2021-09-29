@@ -16,6 +16,11 @@ function App({ props }) {
         render={props => <LandingPage props={props} />}
       ></Route>
       <Route
+        exact
+        path="/test_1"
+        render={props => <LandingPage props={props} />}
+      ></Route>
+      <Route
         path="/result/:finalType"
         render={(props) => <ResultPage props={props} {...props} />}
       ></Route>

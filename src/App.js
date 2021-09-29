@@ -17,7 +17,7 @@ function App({ props }) {
       ></Route>
       <Route
         exact
-        path="/test_1/"
+        path="/*"
         render={props => <LandingPage props={props} />}
       ></Route>
       <Route
@@ -34,7 +34,7 @@ function App({ props }) {
         path="/makers"
         render={props => <DeveloperPage props={props} />}
       ></Route>
-      <Route path="/*"><WarningPage /></Route>
+      {/*<Route path="/*"><WarningPage /></Route>*/}
     </Switch >
   );
 
